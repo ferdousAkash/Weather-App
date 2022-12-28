@@ -7,7 +7,7 @@ const options = {
 };
 const getWeather = (city)=>{
 	cityName.innerHTML = city 
-	fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' +city, options)
+	fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Rangpur' , options)
 	.then(response => response.json())
 	.then((response) => {
 
@@ -30,13 +30,6 @@ const getWeather = (city)=>{
 	})
 	.catch(err => console.error(err));
 }
-
-submit.addEventListener("click", (e)=>
-{
-	e.preventDefault();
-	getWeather(city.value)
-})
-
 const getWeatherDhaka = (city2)=>{
 	fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city='+city2 , options)
 	.then(response => response.json())
@@ -145,6 +138,19 @@ const getWeatherSyl = (city7)=>{
 	})
 	.catch(err => console.error(err));
 }
+
+submit.addEventListener("click", (e)=>
+{
+	e.preventDefault();
+	getWeather(city.value)
+	getWeatherDhaka(city.value)
+	getWeatherDhaka(city.value)
+	getWeatherLal(city.value)
+	getWeatherGai(city.value)
+	getWeatherGai(city.value)
+	getWeatherSyl(city.value)
+})
+
 
 
 getWeather("")
