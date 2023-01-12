@@ -1,7 +1,7 @@
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'xxxx', //For Confidentiality , The API is paired with another repository
+		'X-RapidAPI-Key': 'xxxx', //For Confidentiality , The API key is paired with another repository
 		'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
 	}
 };
